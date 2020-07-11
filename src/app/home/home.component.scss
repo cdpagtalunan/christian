@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    display: flex;
+}
+.sidebar{
+    flex: 1;
+    height: 100vh;
+    background-color: grey;
+    background-image: url("../../assets/picture.png");
+    background-size: 620px 700px;
+    background-repeat: no-repeat;
+}
+.main-content{
+    flex: 1.2;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgb(230, 230, 230);
+}
+.laman{
+    text-align: center;
+    font-size: 1.1em;
+}
+.pic{
+    height: 260px;
+    margin: 0 0 0 250px;
+}
+.link{
+    margin: 80px 0 0 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.lnk-fb{
+    height: 30px;
+    width: 30px;
+}
+.lnk-ig{
+    height: 25px;
+    width: 25px;
+   
+}
+.lnk-git{
+    height: 30px;
+    width: 30px;
+    
+}
+a:hover {
+    opacity: 90%;
+}
+//Typewriter effect
+.type{
+    
+    font-size: 2.3em;
+    animation: type 3s steps(34);
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: serif;
+    border-right: 1px solid black;
+    width: 34ch;
+    margin: -40px 0 0 65px;
+}
+
+
+@keyframes type{
+    0%{
+        width:0ch;
+    }
+    100%{
+        width: 34ch;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .wrapper{
+        display: inline-block;
+    }
+    .sidebar{
+        width: 360px;
+        height: 360px;
+        background-size: 370px 400px;
+
+    }
+    .main-content{
+        width: 360px;
+        height: auto;
+    }
+    .pic{
+        margin: 0 0 0 200px;
+    }
+    .type{
+        margin: auto;
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .wrapper{
+        display: inline-block;
+    }
+    .sidebar{
+        width: 600px;
+        height: 377px;
+        background-size: 600px 400px;
+    }
+    .main-content{
+        width:600px;
+        height: auto;
+    }
+    .type{
+        margin: auto;
+        font-size: 1.8em;
+    }
+    .pic{
+        display: flex;
+        justify-content: center;
+       
+    }
+}
+
